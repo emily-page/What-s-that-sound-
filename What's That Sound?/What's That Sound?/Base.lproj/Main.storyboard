@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wLP-bJ-vKO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="What_s_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cp-Hh-bhA">
+                                <rect key="frame" x="130" y="241" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="optionOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OBZ-sx-An6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1W-A9-Y72">
+                                <rect key="frame" x="128" y="381" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="optionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OjU-NB-EbB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdF-0H-Ji7">
+                                <rect key="frame" x="136" y="143" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Qo-kN-cun"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqR-BM-eX4">
+                                <rect key="frame" x="128" y="308" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="optionTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTo-Jk-DT9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's That Sound?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI1-2G-z7S">
+                                <rect key="frame" x="61" y="72" width="253" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.68894922011021364" blue="0.92839225155549099" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cTa-Hs-nHz"/>
+                    <connections>
+                        <outlet property="firstOption" destination="4cp-Hh-bhA" id="3bj-jQ-GnV"/>
+                        <outlet property="secondOption" destination="zqR-BM-eX4" id="yq0-kQ-BeQ"/>
+                        <outlet property="thirdOption" destination="c1W-A9-Y72" id="im0-WC-EVX"/>
+                        <segue destination="mAf-aI-udL" kind="show" identifier="vc2" id="2TI-Qz-s54"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="138.98050974512745"/>
+        </scene>
+        <!--Level Two View Controller-->
+        <scene sceneID="rJ1-Nm-Lcs">
+            <objects>
+                <viewController id="mAf-aI-udL" customClass="levelTwoViewController" customModule="What_s_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pue-hG-aYp"/>
+                        <viewControllerLayoutGuide type="bottom" id="qc0-RP-OlS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GLT-hp-MsP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4P-lA-ryq">
+                                <rect key="frame" x="124" y="148" width="126" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSound:" destination="mAf-aI-udL" eventType="touchUpInside" id="ylU-4h-EUk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Wb-S0-1w1">
+                                <rect key="frame" x="115" y="195" width="145" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="optionOne:" destination="mAf-aI-udL" eventType="touchUpInside" id="IPj-P5-hDU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8n-Cx-zPA">
+                                <rect key="frame" x="112" y="303" width="150" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="optionTwo:" destination="mAf-aI-udL" eventType="touchUpInside" id="v1l-Af-sNm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oV-Ha-w5d">
+                                <rect key="frame" x="92" y="411" width="190" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="optionThree:" destination="mAf-aI-udL" eventType="touchUpInside" id="ptC-fw-ew0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's That Sound?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHt-eM-rmD">
+                                <rect key="frame" x="61" y="72" width="253" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99513159290249942" blue="0.49777487417691191" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstOption" destination="5Wb-S0-1w1" id="XFq-fp-pAm"/>
+                        <outlet property="secondOption" destination="Y8n-Cx-zPA" id="Aa9-y8-YeR"/>
+                        <outlet property="thirdOption" destination="4oV-Ha-w5d" id="Zaj-1M-P4N"/>
+                        <segue destination="ydI-t2-QJw" kind="show" identifier="vc3" id="Qvb-2u-m0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ibT-hP-Ifx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623.2" y="138.98050974512745"/>
+        </scene>
+        <!--Level Three View Controller-->
+        <scene sceneID="jYi-75-hdf">
+            <objects>
+                <viewController id="ydI-t2-QJw" customClass="levelThreeViewController" customModule="What_s_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ki3-Tu-dFG"/>
+                        <viewControllerLayoutGuide type="bottom" id="h3w-ac-BOc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jr1-Ig-6su">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5u-z2-hWi">
+                                <rect key="frame" x="120" y="146" width="135" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSound:" destination="ydI-t2-QJw" eventType="touchUpInside" id="KB0-VH-2Ry"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtw-vH-R8H">
+                                <rect key="frame" x="123" y="244" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="optionOne:" destination="ydI-t2-QJw" eventType="touchUpInside" id="o3e-5T-hg8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuE-Yy-xpc">
+                                <rect key="frame" x="123" y="318" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="optionTwo:" destination="ydI-t2-QJw" eventType="touchUpInside" id="TjO-da-qPF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KQ-P0-dik">
+                                <rect key="frame" x="123" y="384" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="optionThree:" destination="ydI-t2-QJw" eventType="touchUpInside" id="M8V-jJ-rTo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's That Sound?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFV-ye-QS1">
+                                <rect key="frame" x="61" y="72" width="253" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75944789813052982" green="1" blue="0.71730121266133984" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstOption" destination="wtw-vH-R8H" id="HiN-tA-GA0"/>
+                        <outlet property="secondOption" destination="iuE-Yy-xpc" id="Jm5-tX-7Oh"/>
+                        <outlet property="thirdOption" destination="0KQ-P0-dik" id="D2B-gv-x2b"/>
+                        <segue destination="Sld-B1-OzP" kind="show" identifier="vc4" id="gZF-8e-6Cr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6g-i2-OVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2344.8000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="c6h-0b-vHJ">
+            <objects>
+                <viewController id="Sld-B1-OzP" customClass="fourthViewController" customModule="What_s_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ORT-vP-ddO"/>
+                        <viewControllerLayoutGuide type="bottom" id="4gh-sr-HTc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F6Y-dc-XT9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kb0-FE-7H7">
+                                <rect key="frame" x="120" y="155" width="135" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSound:" destination="ydI-t2-QJw" eventType="touchUpInside" id="FoT-Ky-cTr"/>
+                                    <action selector="playSound:" destination="Sld-B1-OzP" eventType="touchUpInside" id="ogb-Wt-lQP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e1-j9-qdQ">
+                                <rect key="frame" x="123" y="253" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="optionOne:" destination="Sld-B1-OzP" eventType="touchUpInside" id="cdX-1p-GCE"/>
+                                    <action selector="optionOne:" destination="ydI-t2-QJw" eventType="touchUpInside" id="paG-Ft-wJh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3f8-h0-Pvu">
+                                <rect key="frame" x="123" y="327" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="optionTwo:" destination="Sld-B1-OzP" eventType="touchUpInside" id="Vle-Iv-s03"/>
+                                    <action selector="optionTwo:" destination="ydI-t2-QJw" eventType="touchUpInside" id="iGJ-bJ-jtZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02z-L4-kTp">
+                                <rect key="frame" x="123" y="393" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="optionThree:" destination="ydI-t2-QJw" eventType="touchUpInside" id="72M-9e-sry"/>
+                                    <action selector="optionThree:" destination="Sld-B1-OzP" eventType="touchUpInside" id="D61-dI-EJ3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's That Sound?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-zH-yZK">
+                                <rect key="frame" x="61" y="72" width="253" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72478909093306298" green="0.81476760656802849" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstOption" destination="6e1-j9-qdQ" id="fCt-VE-0KZ"/>
+                        <outlet property="secondOption" destination="3f8-h0-Pvu" id="mze-im-s27"/>
+                        <outlet property="thirdOption" destination="02z-L4-kTp" id="2J8-95-Faa"/>
+                        <segue destination="4iG-pN-Lj2" kind="show" identifier="vc5" id="8DK-dH-wcg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="htb-Po-KwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3112.8000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="s83-3a-0i4">
+            <objects>
+                <viewController id="4iG-pN-Lj2" customClass="fifthViewController" customModule="What_s_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sec-CU-PHU"/>
+                        <viewControllerLayoutGuide type="bottom" id="QlO-Vk-W7e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FJb-YN-3Yf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBi-xw-YPe">
+                                <rect key="frame" x="120" y="159" width="135" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSound:" destination="4iG-pN-Lj2" eventType="touchUpInside" id="6We-Qj-LLc"/>
+                                    <action selector="playSound:" destination="ydI-t2-QJw" eventType="touchUpInside" id="I0l-zI-N2D"/>
+                                    <action selector="playSound:" destination="Sld-B1-OzP" eventType="touchUpInside" id="rhu-xe-4Af"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dho-kD-59i">
+                                <rect key="frame" x="123" y="257" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="optionOne:" destination="Sld-B1-OzP" eventType="touchUpInside" id="IPn-Qn-vPu"/>
+                                    <action selector="optionOne:" destination="4iG-pN-Lj2" eventType="touchUpInside" id="hXL-FH-48X"/>
+                                    <action selector="optionOne:" destination="ydI-t2-QJw" eventType="touchUpInside" id="sDn-Hc-bgd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hga-RQ-7VB">
+                                <rect key="frame" x="123" y="318" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="optionTwo:" destination="ydI-t2-QJw" eventType="touchUpInside" id="AAH-1w-4rR"/>
+                                    <action selector="optionTwo:" destination="Sld-B1-OzP" eventType="touchUpInside" id="NzH-4B-ug1"/>
+                                    <action selector="optionTwo:" destination="4iG-pN-Lj2" eventType="touchUpInside" id="gN0-Cq-NCV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's That Sound?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="234-xf-Srh">
+                                <rect key="frame" x="61" y="72" width="253" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0f-HS-1re">
+                                <rect key="frame" x="123" y="382" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="optionThree:" destination="ydI-t2-QJw" eventType="touchUpInside" id="5XH-l1-cwb"/>
+                                    <action selector="optionThree:" destination="4iG-pN-Lj2" eventType="touchUpInside" id="YMY-lW-DLd"/>
+                                    <action selector="optionThree:" destination="Sld-B1-OzP" eventType="touchUpInside" id="bRu-Il-0o5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81935551417175501" green="0.5592349622460151" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstOption" destination="dho-kD-59i" id="ajc-sI-U2p"/>
+                        <outlet property="secondOption" destination="Hga-RQ-7VB" id="LtQ-6h-vds"/>
+                        <outlet property="thirdOption" destination="K0f-HS-1re" id="wMU-LA-crF"/>
+                        <segue destination="25m-eM-VM8" kind="show" identifier="vc6" id="r5k-0Z-Jvl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UsM-qy-aOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3828" y="138.98050974512745"/>
+        </scene>
+        <!--Sixth View Controller-->
+        <scene sceneID="BJV-5L-tq4">
+            <objects>
+                <viewController id="25m-eM-VM8" customClass="sixthViewController" customModule="What_s_That_Sound_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jH7-p3-1Ji"/>
+                        <viewControllerLayoutGuide type="bottom" id="4bv-Xo-kDZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k4C-yo-pMN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lB-00-yp9">
+                                <rect key="frame" x="120" y="171" width="135" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Play Sound"/>
+                                <connections>
+                                    <action selector="playSound:" destination="Sld-B1-OzP" eventType="touchUpInside" id="5KW-hM-tq8"/>
+                                    <action selector="playSound:" destination="ydI-t2-QJw" eventType="touchUpInside" id="8HS-8s-HLD"/>
+                                    <action selector="playSound:" destination="4iG-pN-Lj2" eventType="touchUpInside" id="A45-M3-bTF"/>
+                                    <action selector="playSound:" destination="25m-eM-VM8" eventType="touchUpInside" id="UVY-nY-cVr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIz-VR-Cai">
+                                <rect key="frame" x="123" y="269" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="optionOne:" destination="4iG-pN-Lj2" eventType="touchUpInside" id="T8N-ch-128"/>
+                                    <action selector="optionOne:" destination="25m-eM-VM8" eventType="touchUpInside" id="ahf-de-jPK"/>
+                                    <action selector="optionOne:" destination="ydI-t2-QJw" eventType="touchUpInside" id="b0x-G7-DxW"/>
+                                    <action selector="optionOne:" destination="Sld-B1-OzP" eventType="touchUpInside" id="o9t-my-Or8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's That Sound?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3J-uZ-JnA">
+                                <rect key="frame" x="61" y="84" width="253" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNa-6e-yNU">
+                                <rect key="frame" x="123" y="394" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="optionThree:" destination="ydI-t2-QJw" eventType="touchUpInside" id="B7u-Sl-HJU"/>
+                                    <action selector="optionThree:" destination="4iG-pN-Lj2" eventType="touchUpInside" id="F8r-IJ-1jS"/>
+                                    <action selector="optionThree:" destination="Sld-B1-OzP" eventType="touchUpInside" id="Obq-et-w9N"/>
+                                    <action selector="optionThree:" destination="25m-eM-VM8" eventType="touchUpInside" id="TXw-Vu-Cv7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qv-fg-fKC">
+                                <rect key="frame" x="69" y="329" width="236" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="optionTwo:" destination="4iG-pN-Lj2" eventType="touchUpInside" id="OpC-Xv-N8I"/>
+                                    <action selector="optionTwo:" destination="ydI-t2-QJw" eventType="touchUpInside" id="Sn4-bK-nfv"/>
+                                    <action selector="optionTwo:" destination="25m-eM-VM8" eventType="touchUpInside" id="ovE-0N-Hrl"/>
+                                    <action selector="optionTwo:" destination="Sld-B1-OzP" eventType="touchUpInside" id="wqW-9l-iC6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.61906923009507064" blue="0.39649455858555827" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstOption" destination="xIz-VR-Cai" id="87z-wG-CLo"/>
+                        <outlet property="secondOption" destination="1Qv-fg-fKC" id="edG-nO-GBm"/>
+                        <outlet property="thirdOption" destination="CNa-6e-yNU" id="MAe-uf-CBJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzi-re-0gL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4597.6000000000004" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tmZ-f0-WQB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wLP-bJ-vKO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xV6-wz-36L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="osh-zz-TDe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jmj-GY-36l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+</document>
